@@ -27,7 +27,7 @@ def wrap_student_call( func, input ) :
 
     return actual_result
 
-
+"""
 
 # Check that the `__eq__` function works correctly on the sample table
 # Not included in assignment test cases
@@ -363,7 +363,7 @@ class TestCase16(unittest.TestCase):
 
         self.assertEqual( db16, wrap_student_call( convert_to_table, erd16 ) )
 
-
+"""
 # Two entity sets, one of which is designated as a parent of the other
 # PK with two attributes
 class TestCase17(unittest.TestCase):
@@ -386,7 +386,7 @@ class TestCase17(unittest.TestCase):
 
         actual_result = wrap_student_call(convert_to_table, erd17 )
         self.assertTrue( ( db17a == actual_result ) or ( db17b == actual_result ), "Matches one of two valid orderings")
-
+"""
 
 # A ternary relationship is provided.
 # Multiplicity of many-one-one
@@ -543,7 +543,7 @@ class TestCaseB2(unittest.TestCase):
 
         self.assertEqual( dbB2, wrap_student_call(convert_to_table, erdB2 ) )
 
-
+"""
 
 # Run all unit tests above.
 unittest.main(argv=[''],verbosity=2, exit=False)
